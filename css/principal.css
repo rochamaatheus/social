@@ -1,0 +1,106 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background: url("../imagens/fundo-madeira.jpg") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+main {
+  position: relative;
+  height: 100vh;
+}
+span {
+  position: absolute;
+  display: block;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: .5rem;
+  top: 220px;
+  border-radius: 4px;
+}
+section.tel {
+  background: url("../imagens/frame-iphone.png") no-repeat;
+  width: 280px;
+  height: 565px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+iframe#tela {
+  position: relative;
+  top: 72px;
+  left: 20px;
+  width: 240px;
+  height: 424px;
+}
+section.redes {
+  display: grid;
+  grid-template-columns: 50px;
+  justify-content: end;
+  gap: 10px;
+  padding: 10px;
+}
+section.redes img {
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+  box-sizing: border-box;
+  transition: .2s;
+}
+section.redes img:hover {
+  border: 2px solid wheat;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+@media (max-width: 25rem) {
+  /*400px*/
+  section.tel {
+    background: url("../imagens/frame-iphone-p.png") no-repeat;
+    width: 200px;
+    height: 404px;
+  }
+  iframe#tela {
+    top: 53px;
+    left: 15px;
+    width: 170px;
+    height: 301px;
+  }
+  section.redes {
+    display: flex;
+    justify-content: initial;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 12.5rem) {
+  /*200px*/
+  section.tel {
+    background: url("../imagens/frame-iphone-pp.png") no-repeat;
+    width: 150px;
+    height: 303px;
+    top: 40%;
+  }
+  iframe#tela {
+    top: 39px;
+    left: 11px;
+    width: 128px;
+    height: 228px;
+  }
+  section.redes img {
+     width: 35px;
+  }
+}
