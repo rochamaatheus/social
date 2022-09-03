@@ -34,10 +34,4 @@ cd social
 
 <hr>
 
-<h2>📝 Licença</h2>
-
-O projeto tem a **licença MIT**
-
-<hr>
-
 **Desenvolvido por [Matheus Silveira Rocha](https://github.com/rochamaatheus/).**
